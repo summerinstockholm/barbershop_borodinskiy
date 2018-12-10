@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--Элемент каталога-->
+<!--Шапка страницы-->
+    <header class="main-header">
+        <nav class="main-navigator">
+            <!--Логотип-->
+            <a href="#" class="main-header-logo">
+                <img src="svg/logo.svg"  width="111" height="24" alt="Логотип барбершопа Бородинский">
+            </a>
+            <!--//Логотип-->
+            <!--Основное навигационное меню - неупорядоченный список, каждый элемент содержит ссылку на страниу-->
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <!--//Основное навигациооное меню-->
+            <!--Пользовательская навигация, когда пользователь залогиниться появяться доп ссылки и кнопки-->
+            <ul class="user-navigation">
+                <li class="login-link">Вход</li>
+            </ul>
+            <!--//Пользовательска навигация. Иконка - декоративный элемент, в разметке не отображается-->
+        </nav>
+    </header>
+<!--//Шапка страницы-->
+<!--Основная часть страницы-->
+    <main class="container">
+        <!--Главный заголовок страницы - название товара. Добавим его на страницу-->
+        <h1 class="page-title">Набор для путешествий "Baxter of California</h1>
+        <!--//Главный заголовок страницы - название товара. Добавим его на страницу-->
+        <!--Хлебные крошки-->
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Срдля ухода</a></li>
+            <li class="breadcrumbs-current">Набор для путешествий "Baxter of California</li>
+        </ul>
+        <!--//Хлебные крошки-->
+        <!--Раздел с фото товара-->
+        <section class="product-photos">
+            <!--Скрытый заголовок-->
+            <h2 class="visually-hidden">Изображения товара</h2>
+            <!--//Скрытый заголовок-->
+            <!--Фото-->
+            <p class="product-photo-full">
+                <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+            </p>
+            <ul class="product-photo-preview">
+                <li><img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас"> </li>
+                <li><img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль"> </li>
+                <li><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"> </li>
+            </ul>
+            <!--//Фото-->
+        </section>
+        <!--//Раздел с фото товара-->
+        <!--Информация о товаре-->
+        <section class="product-info">
+            <!--Скрытый заголовок-->
+            <h2 class="visually-hidden">Описание товара</h2>
+            <!--//Скрытый заголовок-->
+            <!--Наличие-->
+            <p class="product-availability">Есть в наличии</p>
+            <!--//Наличие-->
+            <!--Артикул-->
+            <p class="product-article">Артикул dexter-ae</p>
+            <!--//Артикул-->
+            <!--Описание-->
+            <p class="text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что
+                нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий
+                крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+            <!--//Описание-->
+            <!--Цена-->
+            <p class="product-price">
+                <b>2 900 Р</b>
+                <a href="#" class="button">Купить</a>
+            </p>
+            <!--//Цена-->
+            <!--Информация о комплектации товара-->
+            <h3>В набор входят:</h3>
+            <ul>
+                <li>Средство для умывания (50 мл)</li>
+                <li>Увлажняющий крем (50мл)</li>
+                <li>Крем для бритья (50мл)</li>
+                <li>Крем после бритья, шампунь (50мл)</li>
+                <li>Удобная кожаная косметичка</li>
+            </ul>
+            <!--//Информация о комплектации товара-->
+        </section>
+        <!--//Информация о товаре-->
+    </main>
+<!--//Основная часть страницы-->
+<!--Подвал-->
+    <footer clss="main-footer">
+        <!--Раздел с адресом и ссылкой на карту-->
+        <p class="footer-contacts">
+            Барбершоп "Бородинский"<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <a href="map.html">Как нас найти?</a>
+            Телефон: +7 (812) 666-02-66
+        </p>
+        <!--//Раздел с адресом и ссылкой на карту-->
+        <!--Блок соц сетей-->
+        <div class="footer-social">
+            <b>Давайте дружить!</b>
+            <!--Социальные кнопки-->
+            <ul>
+                <li><a href="#" class="social-button">Вконтакте</a></li>
+                <li><a href="#" class="social-button">Фейсбук</a></li>
+                <li><a href="#" class="social-button">Инстаграм</a></li>
+            </ul>
+            <!--//Социальные кнопки-->
+        </div>
+        <!--//Блок соц сетей-->
+        <!--О разработчике-->
+        <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a href="#" class="button">Капиталистическими пидорасами</a>
+    </p>
+        <!--//О разработчике-->
+    </footer>
+<!--//Подвал-->
+<!--Первое всплывающее окно (попап). Вход в личный кабинет-->
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите свой логин и пароль</p>
+        <!--Здесь будет форма-->
+        <!--Иконка для закрытия окна-->
+        <span class="modal-close">x</span>
+        <!--//Иконка для закрытия окна-->
+    </section>
+<!--//Первое всплывающее окно-->
+</body>
+</html>
