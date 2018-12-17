@@ -5,6 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
     <title>Барбершоп Бородинский</title>
 </head>
 <body>
@@ -12,7 +15,7 @@
 
 <!--Шапка страницы-->
     <header class="main-header">
-        <nav class="main-navigator">
+        <nav class="main-navigation">
             <!--Логотип-->
             <a href="#" class="main-header-logo">
                 <img src="svg/index-logo.svg"  width="368" height="153" alt="Логотип барбершопа Бородинский">
@@ -69,96 +72,99 @@
         </section>
         <!--//Раздел с преимуществами-->
         <!--Раздел новостей-->
-        <section class="news">
-            <h2>Новости</h2>
-            <!--Лента новостей. Список-->
-            <ul class="news-list">
-                <li class="news-item">
-                    <p>Нам наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик
-                        во время стрижки!</p>
-                    <time datetime="2019-01-01">1 января 2019</time>
-                </li>
-                <li class="news-item">
-                    <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества
-                        титулов и наград пополнил наши стройные ряды</p>
-                    <time datetime="2019-01-20">20 января 2019</time>
-                </li>
-            </ul>
-            <!--//Лента новостей.-->
-            <!--Ссылка на все новости-->
-            <a href="news.html" class="button">Все новости</a>
-            <!--//Ссылка на все новости-->
-        </section>
-        <!--Раздел новостей-->
-        <!--Фотогалерея-->
-        <section class="gallery">
-            <h2>Фотогалерея</h2>
-
-            <!--Контейнер для картинок-->
-            <figure class="gallery-content">
-                <!--Фото интерьера-->
-                <a href="#"><img src="img/photogallery.jpg" width="286" height="164" alt="Интерьер"></a>
-                <!--//Фото интерьера-->
-            </figure>
-            <!--//Контейнер для картинок-->
-            <!--Кнопки переключения фотографий-->
-            <button class="button gallery-button gallery-button-back" type="button">Назад</button>
-            <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
-            <!--//Кнопки переключения фотографий-->
-        </section>
+        <div class="index-columns">
+            <section class="news">
+                <h2>Новости</h2>
+                <!--Лента новостей. Список-->
+                <ul class="news-list">
+                    <li class="news-item">
+                        <p>Нам наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик
+                            во время стрижки!</p>
+                        <time datetime="2019-01-01">1 января 2019</time>
+                    </li>
+                    <li class="news-item">
+                        <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества
+                            титулов и наград пополнил наши стройные ряды</p>
+                        <time datetime="2019-01-20">20 января 2019</time>
+                    </li>
+                </ul>
+                <!--//Лента новостей.-->
+                <!--Ссылка на все новости-->
+                <a href="news.html" class="button">Все новости</a>
+                <!--//Ссылка на все новости-->
+            </section>
+            <!--//Раздел новостей-->
+            <!--Фотогалерея-->
+            <section class="gallery">
+                <h2>Фотогалерея</h2>
+                <!--Контейнер для картинок-->
+                <figure class="gallery-content">
+                    <!--Фото интерьера-->
+                    <a href="#"><img src="img/photogallery.jpg" width="286" height="164" alt="Интерьер"></a>
+                    <!--//Фото интерьера-->
+                </figure>
+                <!--//Контейнер для картинок-->
+                <!--Кнопки переключения фотографий-->
+                <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+                <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+                <!--//Кнопки переключения фотографий-->
+            </section>
         <!--//Фотогалерея-->
+        </div>
         <!--Контакты-->
-        <section class="contacts">
-            <h2>Контактная информация</h2>
-            <p>
-                Барбершоп "Бородинский"<br>
-                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                Телефон: +7 (812) 666-02-66
-            </p>
-            <p>
-                Время работы:<br>
-                пн-пт: c 10:00 до 22:00<br>
-                сб-вс: с 10:00 до 19:00<br>
-            </p>
-            <!--Ссылки на карту и страницу с контактами-->
-            <a href="map.html" class="class">Как проехать</a>
-            <a href="contacts.html" class="contacts">Обратная связь</a>
-            <!--//Ссылки на карту и страницу с контактами-->
-        </section>
-        <!--//Контакты-->
-        <!--Форма записи для клиентов-->
-        <section class="appointment">
-            <h2>Записаться</h2>
-            <!--Описание формы разметим с помощью абзаца-->
-            <p class="appintment-info">Укажите желаемую дату и время и мы свяжемся с вами для
-                подтверждения брони.</p>
-            <!--ЗДЕСЬ БУДЕТ ФОРМА, НО ПОЗЖЕ-->
-            <form action="https://echo.htmlacademy.ru" class="appointment-form" method="post">
-                <p class="appointment-item">
-                    <label for="appointment-date">Дата</label>
-                    <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+        <div class="index-columns">
+            <section class="contacts">
+                <h2>Контактная информация</h2>
+                <p>
+                    Барбершоп "Бородинский"<br>
+                    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                    Телефон: +7 (812) 666-02-66
                 </p>
-                <p class="appointment-item">
-                    <label for="appointment-time">Время</label>
-                    <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                <p>
+                    Время работы:<br>
+                    пн-пт: c 10:00 до 22:00<br>
+                    сб-вс: с 10:00 до 19:00<br>
                 </p>
-                <p class="appointment-item">
-                    <label for="appointment-name">Ваше имя</label>
-                    <input id="appointment-name" name="name" value="" placeholder="Борода">
-                </p>
-                <p class="appointment-item">
-                    <label for="appointment-phone">Телефон</label>
-                    <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
-                </p>
-                <button class="button" type="submit">Отправить</button>
-            </form>
-            <!--//Форма добавлена 16.12.2018-->
-        </section>
+                <!--Ссылки на карту и страницу с контактами-->
+                <a href="map.html" class="class">Как проехать</a>
+                <a href="contacts.html" class="contacts">Обратная связь</a>
+                <!--//Ссылки на карту и страницу с контактами-->
+            </section>
+            <!--//Контакты-->
+            <!--Форма записи для клиентов-->
+            <section class="appointment">
+                <h2>Записаться</h2>
+                <!--Описание формы разметим с помощью абзаца-->
+                <p class="appintment-info">Укажите желаемую дату и время и мы свяжемся с вами для
+                    подтверждения брони.</p>
+                <!--ЗДЕСЬ БУДЕТ ФОРМА, НО ПОЗЖЕ-->
+                <form action="https://echo.htmlacademy.ru" class="appointment-form" method="post">
+                    <p class="appointment-item">
+                        <label for="appointment-date">Дата</label>
+                        <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-time">Время</label>
+                        <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-name">Ваше имя</label>
+                        <input id="appointment-name" name="name" value="" placeholder="Борода">
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-phone">Телефон</label>
+                        <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+                    </p>
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+                <!--//Форма добавлена 16.12.2018-->
+            </section>
         <!--//Форма записи для клиентов-->
+        </div>
     </main>
 <!--//Основное содержимое страницы-->
 <!--Подвал-->
-    <footer clss="main-footer">
+    <footer class="main-footer">
         <!--Раздел с адресом и ссылкой на карту-->
         <p class="footer-contacts">
             Барбершоп "Бородинский"<br>
@@ -202,7 +208,7 @@
                 <input id="user-password" type="password" class="login-icon-password" name="password" placeholder="Пароль">
             </p>
             <p class="login-password-info">
-                <label for="login-password-info">
+                <label class="login-checkbox">
                     <input id="login-password-info" type="checkbox" class="visually-hidden" name="remember">
                     <span class="checkbox-indicator"></span>
                     Запомните меня
